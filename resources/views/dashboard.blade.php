@@ -84,7 +84,7 @@
     const stock_chart_options = {
           series: [{
           name: 'Price',
-          data: <?= json_encode($stockData); ?>,
+          data: "<?= json_encode($stockData); ?>"
 //          data: [
 //            [1327359600000,30.95],
 //            [1327446000000,31.34],
@@ -427,8 +427,8 @@
           resetCssClasses(e)
       
           stock_chart.zoomX(
-            new Date('28 Jan 2024').getTime(),
-            new Date('27 Feb 2024').getTime()
+            new Date('1 Jan 2024').getTime(),
+            new Date('1 Feb 2024').getTime()
           )
         })
       
@@ -438,8 +438,8 @@
           resetCssClasses(e)
       
           stock_chart.zoomX(
-            new Date('27 Sep 2023').getTime(),
-            new Date('27 Feb 2024').getTime()
+            new Date('1 Jan 2024').getTime(),
+            new Date('1 Jun 2024').getTime()
           )
         })
       
@@ -448,8 +448,8 @@
         .addEventListener('click', function(e) {
           resetCssClasses(e)
           stock_chart.zoomX(
-            new Date('27 Feb 2023').getTime(),
-            new Date('27 Feb 2024').getTime()
+            new Date('1 Jan 2024').getTime(),
+            new Date('1 Dec 2024').getTime()
           )
         })
       
